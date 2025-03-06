@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+    .navbar {
+    display: flex;
+    justify-content: center; /* Centers the nav items */
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+margin: 0 15px;
+}
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 100px 20px;
+    background: #16162d;
+    color: white;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+}
+
+.hero-content span {
+    color: #ff8c00;
+}
+
+.hero-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* About Me */
+.section {
+    padding: 50px;
+    background: rgb(250, 249, 249);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(34, 34, 34, 0.137);
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.about-item {
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+/* Skills */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #ff8c00;
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Container for flex display */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Year section */
+.year-column {
+    width: 80%;
+    text-align: center;
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown button */
+.dropdown-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #17165c;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-button i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate arrow when active */
+.year-column.active .dropdown-button i {
+    transform: rotate(180deg);
+}
+
+/* Course list (hidden by default) */
+.course-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Show courses when active */
+.year-column.active .course-list {
+    display: block;
+}
+
+/* Style for individual course items */
+.course-list li {
+    background-color: #112258ea;
+    color: rgba(238, 231, 231, 0.952);
+    padding: 15px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(40, 41, 40, 0.219);
+    text-align: left;
+}
+
+.course-list {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.course-list li {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(248, 141, 0, 0.753);
+    text-align: center; /* Align text to the left */
+    width: 100%;
+    max-width: 600px; /* Adjust for consistency */
+    display: list-item; /* Ensures bullet points appear */
+    margin-left: auto;
+    margin-right: auto;
+}

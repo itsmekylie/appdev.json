@@ -1,0 +1,274 @@
+{
+    "courses": [
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "NSTP101b",
+            "description": "Civic Welfare Training Service 1",
+            "credit": "1.75"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT111",
+            "description": "Introduction to Computing",
+            "credit": "2.25"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT112",
+            "description": "Computer Programming 1",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "PurCom",
+            "description": "Purposive Communication",
+            "credit": "2.25"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "RPH",
+            "description": "Readings in Philippine History",
+            "credit": "2.00"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "TCW",
+            "description": "The Contemporary World",
+            "credit": "2.00"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "MMW",
+            "description": "Mathematics in the Modern World",
+            "credit": "2.25"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "PATH FIT 13",
+            "description": "Movement Enhancement",
+            "credit": "1.00"
+        },
+
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "NSTP102b",
+            "description": "Civic Welfare Training Service 2",
+            "credit": "2.00"
+        },
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "STS",
+            "description": "Science, Technology and Society",
+            "credit": "2.00"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT121",
+            "description": "Computer Programming 2",
+            "credit": "2.75"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT122",
+            "description": "Data Structures and Algorithms",
+            "credit": "2.50"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT123",
+            "description": "Discrete Mathematics",
+            "credit": "2.50"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "ArtApp",
+            "description": "Art Appreciation",
+            "credit": "1.75"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "UTS",
+            "description": "Understanding the Self",
+            "credit": "2.50"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "PATH FIT 2",
+            "description": "Fitness Activity and Exercises",
+            "credit": "1.00"
+        },
+
+
+
+
+
+
+
+
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT211",
+            "description": "Intro to Human Computer Interaction",
+            "credit": "2.25"
+        },
+
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT212",
+            "description": "Fundamentals of Database Systems",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT213",
+            "description": "Platform Technologies",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT214",
+            "description": "Object Oriented Programming",
+            "credit": "2.25"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT215",
+            "description": "Accounting Principles",
+            "credit": "2.25"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "PATH FIT 3",
+            "description": "Physical Activity Towards Health and Fitness 1",
+            "credit": "1.00"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "EnviSci",
+            "description": "Environmental Science",
+            "credit": "2.50"
+        },
+
+
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT221",
+            "description": "Information Management",
+            "credit": "2.75"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT222",
+            "description": "Networking 1",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT223",
+            "description": "Web Systems and Technolgies",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT224",
+            "description": "Systems Integration and Architecture",
+            "credit": "2.75"
+        },        
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "Ethc",
+            "description": "Ethics",
+            "credit": "2.50"
+        },        
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "Rizal",
+            "description": "Life and Works of Rizal",
+            "credit": "1.50"
+        },        
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "PATH FIT 4",
+            "description": "Physical Activity Towards Health and Fitness 2",
+            "credit": "1.00"
+        },
+
+
+        {
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "IT311",
+            "description": "Information Assurance and Security",
+            "credit": "2.50"
+        },
+
+        
+        {
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "IT312",
+            "description": "Networking 2",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Mobile Programming",
+            "credit": "1.75"
+        },
+        {
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "IT314",
+            "description": "Software Engineering",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "IT315",
+            "description": "IT Elective 1",
+            "credit": "2.50"
+        },
+        {
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "ES211a",
+            "description": "Technopreneurship",
+            "credit": "1.75"
+        }
+
+    ]
+}
+    

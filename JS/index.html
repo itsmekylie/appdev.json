@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css" media="screen">
+    <link rel="stylesheet" href="resets.css" media="screen">
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <title>Kylie Bete Portfolio</title>
+   
+        <script>
+            const jsonURL = "https://raw.githubusercontent.com/itsmekylie/App-Dev/refs/heads/main/JS/courses.json";
+       
+            fetch(jsonURL)
+    .then(response => response.json())
+    .then(data => {
+        let courseContainer = document.getElementById("course-list");
+
+        if (data.courses && Array.isArray(data.courses)) {
+            let coursesByYear = {
+                "1st Year": [],
+                "2nd Year": [],
+                "3rd Year": []
+            };
+
+            // Group courses by year level
+            data.courses.forEach(course => {
+                let year = course.year_level === "1st" ? "1st Year" :
+                           course.year_level === "2nd" ? "2nd Year" : "3rd Year";
+                coursesByYear[year].push(course);
+            });
+
+            // Append courses under respective year levels
+            for (let year in coursesByYear) {
+                if (coursesByYear[year].length > 0) {
+                    let yearColumn = document.createElement("div");
+                    yearColumn.classList.add("year-column");
+                    
+                    // Add special class for 2nd year vertical line
+                    if (year === "2nd Year") {
+                        yearColumn.classList.add("vertical-line");
+                    }
+
+                    // Dropdown button with arrow
+                    let dropdownButton = document.createElement("button");
+                    dropdownButton.classList.add("dropdown-button");
+                    dropdownButton.innerHTML = `${year} <i class="arrow">&#9660;</i>`;
+
+                    // Course list container (initially hidden)
+                    let courseList = document.createElement("ul");
+                    courseList.classList.add("course-list");
+
+                    coursesByYear[year].forEach(course => {
+                        let listItem = document.createElement("li");
+                        listItem.innerHTML = `
+                            <strong>Semester:</strong> ${course.sem} <br>
+                            <strong>Course Code:</strong> ${course.code} <br>
+                            <strong>Course Descriptive:</strong> ${course.description} <br>
+                            <strong>Credit:</strong> ${course.credit}
+                        `;
+                        courseList.appendChild(listItem);
+                    });
+
+                    // Add click event to toggle visibility
+                    dropdownButton.addEventListener("click", function () {
+                        yearColumn.classList.toggle("active");
+                    });
+
+                    // Append elements
+                    yearColumn.appendChild(dropdownButton);
+                    yearColumn.appendChild(courseList);
+                    courseContainer.appendChild(yearColumn);
+                }
+            }
+        } else {
+            console.error("Expected 'courses' array but got:", data);
+        }
+    })
+    .catch(error => console.error("Error fetching JSON:", error));
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Kylie S. Bete</span></h1>
+            <p>IT Student | UI/UX Designer</p>
+        </div>
+        <img src="kyliebetty.png" alt="Kylie's Profile Picture" class="hero-img">
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div class="about-item"><strong>Age:</strong> 22</div>
+            <div class="about-item"><strong>Birthdate:</strong> August 6, 2002</div>
+            <div class="about-item"><strong>Location:</strong> Cugman, CDO</div>
+            <div class="about-item"><strong>Email:</strong> email@example.com</div>
+            <div class="about-item"><strong>Phone:</strong> +63 912 345 6789</div>
+            <div class="about-item"><strong>Freelance:</strong> Available</div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>HTML</h3>
+                <div class="progress"><div class="progress-bar" style="width: 60%;">60%</div></div>
+            </div>
+            <div class="skill-box">
+                <h3>CSS</h3>
+                <div class="progress"><div class="progress-bar" style="width: 50%;">50%</div></div>
+            </div>
+            <div class="skill-box">
+                <h3>UI/UX Design</h3>
+                <div class="progress"><div class="progress-bar" style="width: 70%;">70%</div></div>
+            </div>
+            <div class="skill-box">
+                <h3>Drawing</h3>
+                <div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div>
+            </div>
+        </div>
+    </section>
+    
+        <h2>Subjects Taken</h2>
+        <ul id="course-list" class="flex-container"></ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Kylie S. Bete. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
