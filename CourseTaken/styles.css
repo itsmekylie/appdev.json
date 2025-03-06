@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 100px 20px;
+    background: #16162d;
+    color: white;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+}
+
+.hero-content span {
+    color: #ff8c00;
+}
+
+.hero-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* About Me */
+.section {
+    padding: 50px;
+    background: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #c5351c;
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+/* Subjects Section */
+.subjects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subject-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.subject-list {
+    display: none;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.dropdown-btn {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dropdown-btn:hover {
+    background-color: #ff8c00;
+}
+
+#subjects-container {
+    display: none;
+}
+
+
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+/* Different colors for each skill */
+.progress-bar-html {
+    background: #e2694a; /* HTML - Orange */
+}
+
+.progress-bar-css {
+    background: #e2694a; /* CSS - Blue */
+}
+
+.progress-bar-uiux {
+    background: #e2694a; /* UI/UX - Purple */
+}
+
+.progress-bar-drawing {
+    background: #e2694a; /* Drawing - Pink */
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 10px;
+    width: 0; /* Start from 0 for animation */
+}
+
+/* Course Card Styling */
+.course-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.course-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.year-section {
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.year-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.course-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 8px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.search-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#search-bar {
+    width: 90%;
+    max-width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
